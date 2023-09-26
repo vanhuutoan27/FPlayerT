@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { Players } from '../shared/ListOfPlayers';
 import { useState } from 'react';
 
@@ -13,7 +15,7 @@ export default function PlayersPresentation({ players }) {
             <img src={player.img} alt="" />
             <h3>{player.name}</h3>
             <p className="title"></p>
-            <p>
+            {/* <p>
               <a href="#popup1" id="openPopUp">
                 <button
                   onClick={() => {
@@ -23,7 +25,12 @@ export default function PlayersPresentation({ players }) {
                   Detail
                 </button>
               </a>
-            </p>
+            </p> */}
+            <Link to={`detail/${player.id}`}>
+              <p>
+                <button>Detail</button>
+              </p>
+            </Link>
           </div>
         </div>
       ))}
