@@ -26,11 +26,11 @@ export default function PlayersPresentation({ players }) {
                 </button>
               </a>
             </p> */}
-            <Link to={`detail/${player.id}`}>
-              <p>
+            <p>
+              <Link to={`detail/${player.id}`}>
                 <button>Detail</button>
-              </p>
-            </Link>
+              </Link>
+            </p>
           </div>
         </div>
       ))}
