@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*===== NAVIGATION =====*/
+nav {
+  background-color: #000;
+}
+
+nav ul {
+  margin-left: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 12px 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 16px;
+}
+
+nav ul li a.active {
+  background-color: yellowgreen;
+}
+
+/*===== PLAYER CARD =====*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.container .column {
+  width: calc(100% / 3);
+  padding: 5px;
+}
+
+.container .column img {
+  width: 100%;
+}
+
+.container .card {
+  background-color: #eee;
+  text-align: center;
+}
+
+.container h3 {
+  margin-top: 4px;
+}
+
+.container .card p {
+  margin-top: 12px;
+}
+
+.container .card button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/*===== FOOTER =====*/
+footer {
+  background-color: yellowgreen;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+}
