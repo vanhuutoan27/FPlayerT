@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { data } from '../shared/ListOfPlayers';
-import PlayersPresentation from './PlayersPresentation';
+import PlayersPresentation from '../components/PlayersPresentation';
 export class Main extends Component {
   constructor() {
     super();

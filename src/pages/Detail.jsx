@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { data } from '../shared/ListOfPlayers';
 import { Modal, Button, Icon } from 'react-materialize';
 
-import ModalCase from './ModalCase';
+import ModalCase from '../components/ModalCase';
 
 function DetailPlayer() {
   const { id } = useParams();
